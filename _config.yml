@@ -1,0 +1,35 @@
+title: EMLAB
+tagline: Energy Mechatronics Lab
+description: >-
+  Energy Mechatronics Lab (EMLAB), Incheon National University — researching
+  power electronics, motor drives, and energy conversion systems.
+lab_full_name_en: "Energy Mechatronics Lab"
+lab_full_name_kr: "에너지 메카트로닉스 연구실"
+university: "Incheon National University"
+pi_name: "OOO, Ph.D."
+pi_email: "emlab@inu.ac.kr"
+pi_tel: "032-835-8432"
+address: "8호관 441호, 인천대학교 전기공학과, 인천시 연수구 아카데미로 119"
+
+# ---- Deployment ----
+# If this site lives at https://<user>.github.io/<repo>/ set baseurl to "/<repo>"
+# If this site lives at https://<user>.github.io/ (user/org page) or a custom domain, leave it as ""
+baseurl: ""
+url: ""
+
+markdown: kramdown
+permalink: /news/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md

@@ -1,0 +1,19 @@
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <span class="brand-name">EMLAB</span>
+      <p>{{ site.lab_full_name_en }} · {{ site.lab_full_name_kr }}</p>
+    </div>
+    <div class="footer-col">
+      <p>{{ site.pi_name }}, Principal Investigator</p>
+      <p>{{ site.address }}</p>
+    </div>
+    <div class="footer-col footer-contact">
+      <p>TEL. {{ site.pi_tel }}</p>
+      <p>MAIL. <a href="mailto:{{ site.pi_email }}">{{ site.pi_email }}</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {{ 'now' | date: "%Y" }} {{ site.lab_full_name_en }}. All Rights Reserved.</span>
+  </div>
+</footer>

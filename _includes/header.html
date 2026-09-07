@@ -1,0 +1,74 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="34" height="34">
+          <polyline points="2,22 12,22 16,8 22,34 27,22 38,22" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">EMLAB</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav">
+      <a href="{{ '/' | relative_url }}">Recent News</a>
+
+      <div class="nav-item has-dropdown">
+        <a href="{{ '/about.html' | relative_url }}">About Us</a>
+        <div class="dropdown">
+          <a href="{{ '/about.html#intro' | relative_url }}">Introduction</a>
+          <a href="{{ '/about.html#equipment' | relative_url }}">Equipments</a>
+          <a href="{{ '/about.html#contact' | relative_url }}">Contact</a>
+          <a href="{{ '/about.html#visit' | relative_url }}">Visit Us</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <a href="{{ '/team.html' | relative_url }}">Our Team</a>
+        <div class="dropdown">
+          <a href="{{ '/team.html#professor' | relative_url }}">Professor</a>
+          <a href="{{ '/team.html#phd' | relative_url }}">Ph.D. Students</a>
+          <a href="{{ '/team.html#ms' | relative_url }}">M.S. Students</a>
+          <a href="{{ '/team.html#alumni-ms' | relative_url }}">Alumni (Master)</a>
+          <a href="{{ '/team.html#alumni-phd' | relative_url }}">Alumni (Ph.D.)</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <a href="{{ '/research.html' | relative_url }}">Research</a>
+        <div class="dropdown">
+          <a href="{{ '/research.html#projects' | relative_url }}">Projects Performance</a>
+          <a href="{{ '/research.html#intl-journal' | relative_url }}">Int'l Journal Papers</a>
+          <a href="{{ '/research.html#kr-journal' | relative_url }}">KR Journal Papers</a>
+          <a href="{{ '/research.html#intl-conf' | relative_url }}">Int'l Conference Papers</a>
+          <a href="{{ '/research.html#kr-conf' | relative_url }}">KR Conference Papers</a>
+          <a href="{{ '/research.html#patents' | relative_url }}">Patents</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <a href="{{ '/news.html' | relative_url }}">News</a>
+        <div class="dropdown">
+          <a href="{{ '/news.html' | relative_url }}">All News</a>
+          <a href="{{ '/news.html#events' | relative_url }}">Events</a>
+        </div>
+      </div>
+
+      <div class="nav-item has-dropdown">
+        <a href="{{ '/pictures.html' | relative_url }}">Pictures</a>
+        <div class="dropdown">
+          <a href="{{ '/pictures.html#conference' | relative_url }}">Conference Pictures</a>
+          <a href="{{ '/pictures.html#graduation' | relative_url }}">Graduation Photos</a>
+          <a href="{{ '/pictures.html#other' | relative_url }}">Other Activities</a>
+        </div>
+      </div>
+
+      <a href="{{ '/join.html' | relative_url }}" class="nav-cta">Join Us</a>
+    </nav>
+  </div>
+</header>

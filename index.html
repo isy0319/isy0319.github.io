@@ -1,0 +1,70 @@
+---
+layout: default
+title: Home
+---
+<section class="hero">
+  <div class="wrap hero-inner">
+    <svg class="hero-wave" viewBox="0 0 1000 160" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,80 L120,80 L160,20 L220,140 L280,80 L1000,80" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
+    <h1 class="hero-title">EMLAB</h1>
+    <p class="hero-eyebrow">{{ site.lab_full_name_kr }} · {{ site.university }}</p>
+    <p class="hero-desc">
+      전력전자, 모터 드라이브, 에너지 변환 시스템을 연구합니다.
+      EMLAB is a research group working on power electronics, motor drives,
+      and energy conversion for next-generation electrified systems.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{{ '/research.html' | relative_url }}">Explore our research</a>
+      <a class="btn btn-ghost" href="{{ '/join.html' | relative_url }}">Join the lab</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="rule-mark" aria-hidden="true"></span>
+      <h2>News &amp; Events</h2>
+      <a class="section-link" href="{{ '/news.html' | relative_url }}">All news →</a>
+    </div>
+
+    <ul class="news-list">
+      {% for post in site.posts limit:5 %}
+      <li class="news-row">
+        <a href="{{ post.url | relative_url }}">
+          <span class="news-date">{{ post.date | date: "%Y.%m.%d" }}</span>
+          {% if post.tag %}<span class="tag tag-{{ post.tag | slugify }}">{{ post.tag }}</span>{% endif %}
+          <span class="news-title">{{ post.title }}</span>
+        </a>
+      </li>
+      {% else %}
+      <li class="news-row news-empty">아직 등록된 소식이 없습니다. <code>_posts</code> 폴더에 글을 추가해보세요.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="rule-mark" aria-hidden="true"></span>
+      <h2>Research Focus</h2>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-item">
+        <h3>Power Electronics</h3>
+        <p>고효율 전력 변환 회로 및 제어 기법 연구</p>
+      </div>
+      <div class="focus-item">
+        <h3>Motor Drives</h3>
+        <p>전동기 제어 및 구동 시스템 설계</p>
+      </div>
+      <div class="focus-item">
+        <h3>Energy Conversion</h3>
+        <p>신재생에너지 연계 및 에너지 변환 시스템</p>
+      </div>
+    </div>
+    <p class="focus-note">이 영역들은 예시입니다 — <code>research.html</code>에서 실제 연구 주제로 교체해주세요.</p>
+  </div>
+</section>
